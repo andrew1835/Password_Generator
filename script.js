@@ -102,17 +102,19 @@ function generatePassword() {
   // }
 
   
-  
-  // TODO: create an array of letters for each confirm (CAP letters, lower letters, numbs, and special characters). For example, var lowerCase = "abcdefghijklmnopqrstuvwxyz". DONE (but consider turning the strings into arrays using the SPLIT command) 
-  
-  // TODO: Create an empty array to hold user requested characters. Push each chosen array into this single array. DONE
-  
-  // TODO: Create if/else statements that checks if the user said yes or no to different confirms that we asked them, and based on their response push those specific characters to our empty array (done below). You will need seperate vars and a seperate if statement for each confirm. DONE 
+
   
   // TODO: Create a var to hold the final results (the password that will be given)
   
   var finalPass = myFinalArrayofCharacters; 
   console.log(finalPass)
+
+
+
+
+
+
+
   
   // TODO: I need a for loop to loop over my final array and put the choices into the var created above. It should run the number of times that the user wants the length of the password to be (aka based on the prompt when we asked the user how many characters they like their password to be). Choose from the final array that holds all the characters that the user wanted, and save them to our finalPass variable. 
   
@@ -121,17 +123,28 @@ function generatePassword() {
       
   // }
   
-  
   // TODO:
-  // var randomNum = Math.floor(Math.random() * (finalArray.length -1))   <-- this is done inside the for loop above
+  // I need to get a random number that's anywhere between 0 and finalArray.length -1. This will be the number that you index in order to pick a random character for your password. This is what will be looped
+
+  // I think what you want is Math.floor(Math.random() * (finalArray.length*10)). This should give you a random number between 0 and the array length. Do you still have to subtract 1?
+  // What Math.floor(Math.random() does is give you a random number in the form of an integer
+  // var randomNum = Math.floor(Math.random() * (finalArray.length -1))   <-- this is done inside the for loop above. Maybe you don't have to do the -1 since normally you do +1 with Math.floow(Math.random) and the -1 and +1 would just cancel each other out
   // inside the for loop (finalPass = finalPass + finalArray[randomNum])
   
+
+
+
+
+
+
+
+
+
   // TODO: return the finalPass from this function. This should not be inside the for loop. Will be at the end of the function. 
    
-  // The below code will be the final piece of code you write. Whatever you return will be what's typed onto the screen
   // return 
   }
   
 
 
-// TODO: Final to do is to deal with edge cases. The only one you can really think of is if someone answers no to everything, and if someone gives you a number that's not between 8 and 128. If someone answers no to everything, you want to alert them that they "You must select "OK" on at least one of the prompts to receive a password. Try again." 
+// TODO: Final to do is to deal with edge cases. The only one left is if someone asks for a character amount that's less than 8 or greater than 128 
