@@ -85,7 +85,7 @@ function generatePassword() {
   // TODO: create a conditional to make sure that the user has chosen at least one type of character (if/else statement will be good for this). 
   if (upperConfirm === false && lowerConfirm === false && numConfirm === false && specialCharConfirm === false ) {
     alert("You must select 'OK' on at least one of the prompts to receive a password. Try again.")
-    return
+    return "CLICK BELOW TO TRY AGAIN"
   }
   
 
