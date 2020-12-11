@@ -1,7 +1,9 @@
   // Will put all my confirms down below. After creating them, will have to make it so that they only go off once the button is clicked. You will have to put it inside the function that is prompted with the event listener of "click" 
   
 
-
+// My code. Creating a variable to hold the array of characters that the user has selected as potential options for the password
+// It didn't do anything when written up here, so I'm trying to put it into the function
+// var myFinalArrayofCharacters = ''
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -31,20 +33,45 @@ function generatePassword() {
 
   // TODO: Create confirm to ask user if they want capital letters and set to a variable
   var upperConfirm = confirm("Do you want to include uppercase letters in your password?")
+  var myFinalArrayofCharacters = ''
+  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+
+  if(upperConfirm === true) {
+    myFinalArrayofCharacters = myFinalArrayofCharacters + upperCase
 
 
+
+  }
   // TODO: Create confirm to ask user if they want lowercase letters and set to a variable
   var lowerConfirm = confirm("Do you want to include lowercase letters in your password?")
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz"
+  
+  if(lowerConfirm === true) {
+    myFinalArrayofCharacters = myFinalArrayofCharacters + lowerCase
 
 
+
+  }
   // TODO: Create confirm to ask user if they want numbers and set to a variable
   var numConfirm = confirm("Do you want to numbers in your password?")
+  var numbers = "0123456789"
+
+  if(numConfirm === true) {
+    myFinalArrayofCharacters = myFinalArrayofCharacters + numbers
 
 
+
+  }
   // TODO: Create confirmm to ask user if they want special characters and set to a variable
   var specialCharConfirm = confirm("Would you like special characters in your pass?")
+  var specialCharacters = " !#$%&'*+,-_/;:<=>?@`|~" 
+  
+  if(specialCharConfirm === true) {
+    myFinalArrayofCharacters = myFinalArrayofCharacters + specialCharacters
 
 
+
+  }
   // TODO: Create a prompt to ask user how many characters they want their password to be (at least 8 characters and no more than 128) and set to a variable. You will at some point create if else statements where if they give you a value that doesn't fall between 8-128, the prompt comes back with the message "Invalid response. Response must be a number between 8 and 128" 
   var lengthPrompt = prompt("How many characters would you like your password to be (between 8 and 128)?")
 
@@ -81,14 +108,17 @@ function generatePassword() {
   
   }
   
-  // This is about line TODO Create an empty array to hold user requested characters. Push each chosen array into this single array 
-  var specialCharQuestion = confirm("Would you like special chars in your pass?")
-  var myFinalArrayofCharacters = ''
-  var specialCharacters = "!@#$% ^"
+
+  // This is about line TODO "Create an empty array to hold user requested characters. Push each chosen array into this single array". The below code has been commented out so that it doesn't interfere with your actual code, but it's still good to reference 
+
+  // var specialCharQuestion = confirm("Would you like special chars in your pass?")
+  // var myFinalArrayofCharacters = ''
+  // var specialCharacters = "!@#$% ^"
   
-  if(specialCharQ === true) {
-      myFinalArrayofCharacters = myFinalArrayofCharacters+specialCharacters
-  }
+  // if(specialCharQ === true) {
+  //     myFinalArrayofCharacters = myFinalArrayofCharacters+specialCharacters
+  // }
+
   // if ()    <--- commented out for now because it was messing with your code
 
 
@@ -96,4 +126,7 @@ function generatePassword() {
 
 
 
-  
+
+
+// Questions to ask: 
+// Why don't I have to use brackets for the character arrays? 
