@@ -106,7 +106,7 @@ function generatePassword() {
   
   // TODO: Create a var to hold the final results (the password that will be given)
   
-  var finalPass 
+  var finalPass = ""
 
 
 
@@ -118,17 +118,27 @@ function generatePassword() {
   // TODO: I need a for loop to loop over my final array and put the choices into the var created above. It should run the number of times that the user wants the length of the password to be (aka based on the prompt when we asked the user how many characters they like their password to be). Choose from the final array that holds all the characters that the user wanted, and save them to our finalPass variable. 
   
   // To do the for loop, i think you need to do some review on for loops from previous activities and see how i works and if/how it's called upon within the loop
-  // for (var i = 0; i < lengthPrompt; i++) {
-      
-      
-  // }
+  // So, in the parentheses after the for loop, you're stating the paramters by which you want the stuff written in the curly brackets to run. For this, you want the for loop to run until i=lengthPrompt
+  // You're gonna write it without referring to i in the curly brackets. I don't think you need to refer to i at all because I think that i will just go up 1 each time you run the for loop, but I guess we'll see if you need to include i in the curly backets
+  for (var i = 0; i < lengthPrompt; i++) {
+
+    // the below will give you a random number between 0 and finalArray length -1. I don't need to do finalArray.length-1 because Math.floor rounds it down, so even if Math.random gives me 0.9999 and I multiply that by finalArray.length, 
+    var randomNum = Math.floor(Math.random() * (finalArray.length))
+    console.log(randomNum)   
+
+    finalPass += finalArray[randomNum]  
+    console.log(finalPass)
+
+  }
   
   // TODO: // I need to get a random number that's anywhere between 0 and finalArray.length -1. This will be the number that you index in order to pick a random character for your password. This is what will be looped
 
-  var randomNum = Math.floor(Math.random() * (finalArray.length -1))
-  console.log(randomNum)
-  // the above goes inside the for loop above. (finalPass = finalPass + finalArray[randomNum])
+  // var randomNum = Math.floor(Math.random() * (finalArray.length -1))
+  // console.log(randomNum)
+  // the above goes inside the for loop above. 
+  // (finalPass = finalPass + finalArray[randomNum])
 
+  return finalPass
   
 
 
