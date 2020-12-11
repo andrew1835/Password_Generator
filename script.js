@@ -42,6 +42,9 @@ function generatePassword() {
 
 
   }
+  console.log(myFinalArrayofCharacters)
+
+
   // TODO: Create confirm to ask user if they want lowercase letters and set to a variable
   var lowerConfirm = confirm("Do you want to include lowercase letters in your password?")
   var lowerCase = "abcdefghijklmnopqrstuvwxyz"
@@ -52,6 +55,9 @@ function generatePassword() {
 
 
   }
+  console.log(typeof myFinalArrayofCharacters)
+
+
   // TODO: Create confirm to ask user if they want numbers and set to a variable
   var numConfirm = confirm("Do you want to numbers in your password?")
   var numbers = "0123456789"
@@ -62,6 +68,8 @@ function generatePassword() {
 
 
   }
+  console.log(typeof myFinalArrayofCharacters)
+
   // TODO: Create confirmm to ask user if they want special characters and set to a variable
   var specialCharConfirm = confirm("Would you like special characters in your pass?")
   var specialCharacters = " !#$%&'*+,-_/;:<=>?@`|~" 
@@ -72,9 +80,17 @@ function generatePassword() {
 
 
   }
+  console.log(myFinalArrayofCharacters)
+
   // TODO: Create a prompt to ask user how many characters they want their password to be (at least 8 characters and no more than 128) and set to a variable. You will at some point create if else statements where if they give you a value that doesn't fall between 8-128, the prompt comes back with the message "Invalid response. Response must be a number between 8 and 128" 
   var lengthPrompt = prompt("How many characters would you like your password to be (between 8 and 128)?")
-
+  console.log(lengthPrompt);
+  while (lengthPrompt>128 || lengthPrompt<8){
+    var invalidPrompt = prompt("Invalid response. Response must be a number between 8 and 128")
+    return invalidPrompt
+    
+  }
+  console.log(invalidPrompt)
   
   // TODO: create a conditional to make sure that the user has chosen at least one type of character (if/else statement will be good for this) 
   
@@ -90,10 +106,10 @@ function generatePassword() {
   
   // TODO: I need a for loop to loop over my final array and put the choices into the var created above. It should run the number of times that the user wants the length of the password to be (aka based on the prompt when we asked the user how many characters they like their password to be). Choose from the final array created in 36 that holds all the characters that the user wanted, and save them to our finalPass variable. 
   
-  for (var i = 0; i < passLen; i++) {
+  // for (var i = 0; i < passLen; i++) {
       
       
-  }
+  // }
   
   
   // TODO:
@@ -130,3 +146,4 @@ function generatePassword() {
 
 // Questions to ask: 
 // Why don't I have to use brackets for the character arrays? 
+// My length prompt always comes back as invalid, even if the characters are between 8 and 128
