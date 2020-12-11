@@ -93,6 +93,15 @@ function generatePassword() {
   var lengthPrompt = prompt("How many characters would you like your password to be (between 8 and 128)?")
   console.log(lengthPrompt);
 
+  while ((lengthPrompt>128 || lengthPrompt<8)){
+    var invalidPrompt = prompt("Invalid response. Response must be a number between 8 and 128")
+    lengthPrompt = invalidPrompt
+    // if ((lengthPrompt>128 || lengthPrompt<8)){
+    //   var invalidPrompt = prompt("Invalid response. Response must be a number between 8 and 128")
+    //   // lengthPrompt = invalidPrompt
+    // }
+  }
+
   // The below code doesn't work yet. It will make the prompt always go away if you put in another number, regardless of what that number's value is
 
   // while (lengthPrompt>128 || lengthPrompt<8){
@@ -156,4 +165,5 @@ function generatePassword() {
   
 
 
-// TODO: Final to do is to deal with edge cases. The only one left is if someone asks for a character amount that's less than 8 or greater than 128 
+// TODO: Final to do is to deal with edge cases. The only one left is if someone asks for a character amount that's less than 8 or greater than 128. 
+// Make sure it doesn't return "undefined" in the text box
