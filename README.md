@@ -20,5 +20,5 @@ Through this process, I reinforced the fundamentals of JavaScript that I learned
 The area where I think my program stands out most is the edge cases. If the user tries to do anything outside of what's instructed, the program will not break, and the program will also tell the user what to do in order to generate a password. It took me a while to deal with those edge cases, but I'm really happy with the results. 
 
 # Links
-Link to Password Generator: https://andrew1835.github.io/Responsive_Portfolio_1/
-Link to GitHub repository: https://github.com/andrew1835/Responsive_Portfolio_1
+Link to Password Generator: https://andrew1835.github.io/Password_Generator/
+Link to GitHub repository: https://github.com/andrew1835/Password_Generator
