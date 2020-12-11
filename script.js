@@ -1,3 +1,8 @@
+  // Will put all my confirms down below. After creating them, will have to make it so that they only go off once the button is clicked. You will have to put it inside the function that is prompted with the event listener of "click" 
+  
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -10,26 +15,39 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to the generate button
 generateBtn.addEventListener("click", writePassword);
 
 
-// for hw 3
+
+
+
+
+
 
 // TODO: Create a generatePassword function and write all the logic within this function. Whatever it returns will be shown on the page
 function generatePassword() {
 
 
   // TODO: Create confirm to ask user if they want capital letters and set to a variable
-  
+  var upperConfirm = confirm("Do you want to include uppercase letters in your password?")
+
+
   // TODO: Create confirm to ask user if they want lowercase letters and set to a variable
-  
+  var lowerConfirm = confirm("Do you want to include lowercase letters in your password?")
+
+
   // TODO: Create confirm to ask user if they want numbers and set to a variable
-  
+  var numConfirm = confirm("Do you want to numbers in your password?")
+
+
   // TODO: Create confirmm to ask user if they want special characters and set to a variable
-  
-  // TODO: Create a prompt to ask user how many characters they want their password to be (at least 8 characters and no more than 128) and set to a variable 
-  var passLen = prompt("How long? (between 8-128)")
+  var specialCharConfirm = confirm("Would you like special characters in your pass?")
+
+
+  // TODO: Create a prompt to ask user how many characters they want their password to be (at least 8 characters and no more than 128) and set to a variable. You will at some point create if else statements where if they give you a value that doesn't fall between 8-128, the prompt comes back with the message "Invalid response. Response must be a number between 8 and 128" 
+  var lengthPrompt = prompt("How many characters would you like your password to be (between 8 and 128)?")
+
   
   // TODO: create a conditional to make sure that the user has chosen at least one type of character (if/else statement will be good for this) 
   
@@ -57,11 +75,13 @@ function generatePassword() {
   
   // TODO: return the finalPass from this function. This should not be inside the for loop. Will be at the end of the function. 
   
+
+  //TODO: Write the password into the #password from index.html using textContent. Activity 6 from today could be a good resource for this, though I think this might've already been done for you in the code provided 
   
   
   }
   
-  // This is about line 38's TODO 
+  // This is about line TODO Create an empty array to hold user requested characters. Push each chosen array into this single array 
   var specialCharQuestion = confirm("Would you like special chars in your pass?")
   var myFinalArrayofCharacters = ''
   var specialCharacters = "!@#$% ^"
@@ -69,4 +89,11 @@ function generatePassword() {
   if(specialCharQ === true) {
       myFinalArrayofCharacters = myFinalArrayofCharacters+specialCharacters
   }
-  if ()
+  // if ()    <--- commented out for now because it was messing with your code
+
+
+
+
+
+
+  
