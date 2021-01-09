@@ -22,3 +22,7 @@ The area where I think my program stands out most is the edge cases. If the user
 # Links
 Link to Password Generator: https://andrew1835.github.io/Password_Generator/
 Link to GitHub repository: https://github.com/andrew1835/Password_Generator
+
+# Screenshots
+
+<img src = "" alt= "">
