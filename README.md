@@ -25,4 +25,5 @@ Link to GitHub repository: https://github.com/andrew1835/Password_Generator
 
 # Screenshots
 
-<img src = "" alt= "">
+<img src = "Assets/HomeScreen.jpg" alt= "homescreen">
+<img src = "Assets/PasswordGenerated.jpg" alt= "Generated password">
